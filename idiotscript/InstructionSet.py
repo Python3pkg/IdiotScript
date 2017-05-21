@@ -30,7 +30,7 @@ class InstructionSet(object):
         of the class that represents that instruction and sends
         it back to the caller.
         '''
-        for name, klass in self.instructions.items():
+        for name, klass in list(self.instructions.items()):
             if len(search_string) < len(klass.INSTRUCTION):
                 continue
             if search_string.startswith(klass.INSTRUCTION):

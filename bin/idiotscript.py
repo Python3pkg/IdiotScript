@@ -59,4 +59,4 @@ runner = ScriptRunner(InputContainer(inputtext))
 runner.run(my_ilist, my_collector)
 
 nl_formatter = formatters.NewlineFormatter()
-print(nl_formatter.format(my_collector))
+print((nl_formatter.format(my_collector)))
